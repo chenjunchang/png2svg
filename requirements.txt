@@ -1,0 +1,10 @@
+# Auto-generated minimal dependencies for ImageToSvg
+numpy
+opencv-python
+networkx
+scipy
+svgwrite
+pillow
+easyocr
+pytesseract
+
