@@ -1,0 +1,337 @@
+/* PNG2SVG Default SVG Styles */
+/* Mathematical Diagram Vectorization System */
+
+/* Root SVG container */
+svg {
+  background: white;
+  font-family: 'Times New Roman', 'DejaVu Serif', serif;
+  font-size: 14px;
+}
+
+/* Main geometry layer - primary diagram elements */
+#main {
+  stroke: #000000;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Main lines and shapes */
+#main line {
+  stroke-width: 2px;
+  stroke: #000000;
+}
+
+#main circle {
+  stroke-width: 2px;  
+  stroke: #000000;
+  fill: none;
+}
+
+#main path {
+  stroke-width: 2px;
+  stroke: #000000;
+  fill: none;
+}
+
+/* Auxiliary layer - construction lines, dashed elements */
+#aux {
+  stroke: #666666;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#aux line {
+  stroke-width: 1px;
+  stroke: #666666;
+  stroke-dasharray: 6,6;
+}
+
+#aux circle {
+  stroke-width: 1px;
+  stroke: #666666; 
+  fill: none;
+  stroke-dasharray: 6,6;
+}
+
+#aux path {
+  stroke-width: 1px;
+  stroke: #666666;
+  fill: none;
+  stroke-dasharray: 6,6;
+}
+
+/* Symbols layer - mathematical symbols */
+#symbols {
+  stroke: #000000;
+  fill: #000000;
+  stroke-width: 1.5px;
+}
+
+/* Right angle markers */
+.right-angle {
+  stroke: #000000;
+  fill: none;
+  stroke-width: 1px;
+}
+
+/* Tick marks for equal lengths */
+.tick-mark {
+  stroke: #000000;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+
+/* Arc markers for angles */
+.angle-arc {
+  stroke: #000000;
+  fill: none;
+  stroke-width: 1px;
+}
+
+/* Parallel marks */
+.parallel-mark {
+  stroke: #000000;
+  stroke-width: 1px;
+  stroke-linecap: round;
+}
+
+/* Arrow heads */
+.arrow {
+  stroke: #000000;
+  fill: #000000;
+  stroke-width: 1px;
+}
+
+/* Labels layer - text annotations */
+#labels {
+  font-family: 'Times New Roman', 'DejaVu Serif', serif;
+  font-size: 14px;
+  fill: #000000;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+/* Point labels (A, B, C, etc.) */
+.point-label {
+  font-size: 16px;
+  font-weight: bold;
+  fill: #000000;
+}
+
+/* Angle labels (30°, 45°, etc.) */
+.angle-label {
+  font-size: 12px;
+  fill: #000000;
+  font-style: italic;
+}
+
+/* Length labels (x+1, 2a, etc.) */
+.length-label {
+  font-size: 12px;
+  fill: #000000;
+}
+
+/* Formula labels */
+.formula-label {
+  font-size: 12px;
+  fill: #000000;
+  font-family: 'Times New Roman', serif;
+}
+
+/* Nodes layer - intersection points, vertices */
+#nodes circle {
+  stroke: #000000;
+  fill: #ffffff;
+  stroke-width: 1px;
+  r: 2px;
+}
+
+/* Special node types */
+.intersection-point {
+  stroke: #000000;
+  fill: #000000;
+  r: 1.5px;
+}
+
+.vertex-point {
+  stroke: #000000;
+  fill: #ffffff;
+  r: 2px;
+}
+
+.center-point {
+  stroke: #666666;
+  fill: #666666;
+  r: 1px;
+}
+
+/* Midpoint markers */
+.midpoint {
+  stroke: #000000;
+  fill: #000000;
+  r: 1px;
+}
+
+/* Foot of perpendicular markers */
+.foot-marker {
+  stroke: #000000;
+  fill: #ffffff;
+  stroke-width: 1px;
+}
+
+/* Dashed line styles */
+.dashed {
+  stroke-dasharray: 6,6;
+}
+
+.dotted {
+  stroke-dasharray: 2,4;
+}
+
+.dash-dot {
+  stroke-dasharray: 8,4,2,4;
+}
+
+/* Thickness variations */
+.thick {
+  stroke-width: 3px;
+}
+
+.thin {
+  stroke-width: 1px;
+}
+
+.extra-thick {
+  stroke-width: 4px;
+}
+
+/* Color coding for different element roles */
+.construction {
+  stroke: #999999;
+  stroke-width: 1px;
+  stroke-dasharray: 4,4;
+}
+
+.given {
+  stroke: #000000;
+  stroke-width: 2px;
+}
+
+.solution {
+  stroke: #cc0000;
+  stroke-width: 2px;
+}
+
+.auxiliary {
+  stroke: #666666;
+  stroke-width: 1px;
+}
+
+/* Highlight styles for interactive elements */
+.highlight {
+  stroke: #ff6600;
+  stroke-width: 3px;
+}
+
+.selected {
+  stroke: #0066ff;
+  stroke-width: 3px;
+}
+
+/* Print-friendly styles */
+@media print {
+  svg {
+    background: white;
+  }
+  
+  .construction {
+    stroke: #999999;
+  }
+  
+  .solution {
+    stroke: #000000;
+    stroke-width: 2px;
+  }
+}
+
+/* Responsive scaling for different viewport sizes */
+@media (max-width: 768px) {
+  #labels {
+    font-size: 12px;
+  }
+  
+  .point-label {
+    font-size: 14px;
+  }
+  
+  .angle-label, .length-label, .formula-label {
+    font-size: 10px;
+  }
+}
+
+/* Accessibility enhancements */
+.accessible-high-contrast {
+  stroke: #000000;
+  fill: #ffffff;
+}
+
+/* Animation classes for dynamic presentations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.draw-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 2s ease-in-out forwards;
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Semantic data attribute styling */
+[data-role="main"] {
+  stroke: #000000;
+  stroke-width: 2px;
+}
+
+[data-role="aux"] {
+  stroke: #666666;  
+  stroke-width: 1px;
+  stroke-dasharray: 6,6;
+}
+
+[data-parallel="true"] {
+  /* Add parallel indicators if needed */
+}
+
+[data-perpendicular="true"] {
+  /* Add perpendicular indicators if needed */  
+}
+
+[data-equal-length="true"] {
+  /* Add equal length indicators if needed */
+}
+
+/* Quality indicators based on confidence */
+[data-conf-low] {
+  opacity: 0.7;
+}
+
+[data-conf-medium] {
+  opacity: 0.85;
+}
+
+[data-conf-high] {
+  opacity: 1.0;
+}

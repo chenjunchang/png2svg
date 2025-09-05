@@ -1,10 +1,35 @@
-# Auto-generated minimal dependencies for ImageToSvg
-numpy
-opencv-python
-networkx
-scipy
-svgwrite
-pillow
-easyocr
-pytesseract
+# PNG2SVG Dependencies
+# Core image processing and computer vision
+opencv-python>=4.9
+numpy>=1.24
+scipy>=1.11
+Pillow>=10.0
+
+# Geometry and graph processing
+shapely>=2.0
+networkx>=3.2
+
+# SVG generation
+svgwrite>=1.4
+svgelements>=1.9
+
+# Configuration and validation
+pydantic>=2.7
+PyYAML>=6.0
+
+# Progress and logging
+tqdm>=4.66
+
+# OCR engines
+pytesseract>=0.3.10
+
+# Optional dependencies (will degrade gracefully if not available)
+# Computer vision and ML
+ultralytics>=8.2
+onnxruntime>=1.17
+paddleocr>=2.7.0
+
+# Advanced image processing
+scikit-image>=0.23
+scikit-learn>=1.3
 

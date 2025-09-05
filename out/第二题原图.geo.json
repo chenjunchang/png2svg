@@ -1,0 +1,1588 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "第二题原图.png",
+    "generated": "2025-09-05T09:33:35.455298",
+    "generator": "PNG2SVG v1.0",
+    "config": {
+      "deskew": true,
+      "constraint_solver": true,
+      "yolo_symbols": false,
+      "paddle_ocr": true,
+      "confidence_tta": true
+    }
+  },
+  "statistics": {
+    "total_nodes": 30,
+    "total_edges": 15,
+    "total_relations": 22,
+    "node_types": {
+      "endpoint": 30
+    },
+    "edge_types": {
+      "lines": 15,
+      "circles": 0,
+      "arcs": 0,
+      "dashed_lines": 0
+    },
+    "relation_types": {
+      "parallel": 9,
+      "perpendicular": 11,
+      "point_on_line": 2
+    },
+    "labeled_nodes": 1,
+    "average_confidence": 0.837
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          301.19,
+          358.07
+        ]
+      },
+      "properties": {
+        "id": "48c4e7a2",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.78,
+          250.94
+        ]
+      },
+      "properties": {
+        "id": "ad3a51f4",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          387.84,
+          162.29
+        ]
+      },
+      "properties": {
+        "id": "d1300dbc",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          302.98,
+          357.52
+        ]
+      },
+      "properties": {
+        "id": "a770a9f1",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          221.93,
+          202.39
+        ]
+      },
+      "properties": {
+        "id": "c11110bc",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          259.5,
+          197.98
+        ]
+      },
+      "properties": {
+        "id": "bc074a4f",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.67,
+          265.84
+        ]
+      },
+      "properties": {
+        "id": "8b435ecf",
+        "kind": "endpoint",
+        "tag": "A",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.26,
+          253.05
+        ]
+      },
+      "properties": {
+        "id": "aa32beeb",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          258.13,
+          200.96
+        ]
+      },
+      "properties": {
+        "id": "4572e33d",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          368.12,
+          201.57
+        ]
+      },
+      "properties": {
+        "id": "ee7556e8",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.58,
+          247.66
+        ]
+      },
+      "properties": {
+        "id": "0fff746d",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          222.03,
+          203.71
+        ]
+      },
+      "properties": {
+        "id": "701c098a",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          236.92,
+          203.31
+        ]
+      },
+      "properties": {
+        "id": "c3c3035a",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.14,
+          249.15
+        ]
+      },
+      "properties": {
+        "id": "6d532143",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          244.73,
+          329.82
+        ]
+      },
+      "properties": {
+        "id": "c511f136",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          285.81,
+          347.7
+        ]
+      },
+      "properties": {
+        "id": "d0bf0b4f",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.99,
+          250.36
+        ]
+      },
+      "properties": {
+        "id": "ae033b2f",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          237.05,
+          326.48
+        ]
+      },
+      "properties": {
+        "id": "0f062843",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          238.54,
+          325.63
+        ]
+      },
+      "properties": {
+        "id": "0c8705f8",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          238.5,
+          204.37
+        ]
+      },
+      "properties": {
+        "id": "24b970d9",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          243.67,
+          323.67
+        ]
+      },
+      "properties": {
+        "id": "8b0d9a7f",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          364.72,
+          203.46
+        ]
+      },
+      "properties": {
+        "id": "05ab4029",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          241.76,
+          218.12
+        ]
+      },
+      "properties": {
+        "id": "937257b7",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          241.76,
+          324.37
+        ]
+      },
+      "properties": {
+        "id": "7c267500",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          306.76,
+          340.03
+        ]
+      },
+      "properties": {
+        "id": "075c7f81",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          363.33,
+          210.17
+        ]
+      },
+      "properties": {
+        "id": "95905728",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          368.0,
+          199.32
+        ]
+      },
+      "properties": {
+        "id": "a477babd",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          384.25,
+          161.82
+        ]
+      },
+      "properties": {
+        "id": "38ce66f1",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          362.66,
+          210.16
+        ]
+      },
+      "properties": {
+        "id": "889fc774",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          244.38,
+          328.13
+        ]
+      },
+      "properties": {
+        "id": "d62d3eb3",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            301.19,
+            358.07
+          ],
+          [
+            54.78,
+            250.94
+          ]
+        ]
+      },
+      "properties": {
+        "id": "5d56c11e",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            387.84,
+            162.29
+          ],
+          [
+            302.98,
+            357.52
+          ]
+        ]
+      },
+      "properties": {
+        "id": "793f201c",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            221.93,
+            202.39
+          ],
+          [
+            259.5,
+            197.98
+          ]
+        ]
+      },
+      "properties": {
+        "id": "97dfa8a3",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            27.67,
+            265.84
+          ],
+          [
+            51.26,
+            253.05
+          ]
+        ]
+      },
+      "properties": {
+        "id": "5838fbea",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            258.13,
+            200.96
+          ],
+          [
+            368.12,
+            201.57
+          ]
+        ]
+      },
+      "properties": {
+        "id": "4afca32b",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            54.58,
+            247.66
+          ],
+          [
+            222.03,
+            203.71
+          ]
+        ]
+      },
+      "properties": {
+        "id": "11b2c5de",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236.92,
+            203.31
+          ],
+          [
+            62.14,
+            249.15
+          ]
+        ]
+      },
+      "properties": {
+        "id": "f7fda4b9",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            244.73,
+            329.82
+          ],
+          [
+            285.81,
+            347.7
+          ]
+        ]
+      },
+      "properties": {
+        "id": "70346a21",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.99,
+            250.36
+          ],
+          [
+            237.05,
+            326.48
+          ]
+        ]
+      },
+      "properties": {
+        "id": "c81ee7ce",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            238.54,
+            325.63
+          ],
+          [
+            238.5,
+            204.37
+          ]
+        ]
+      },
+      "properties": {
+        "id": "e43b4a08",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            243.67,
+            323.67
+          ],
+          [
+            364.72,
+            203.46
+          ]
+        ]
+      },
+      "properties": {
+        "id": "3b3d51bd",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            241.76,
+            218.12
+          ],
+          [
+            241.76,
+            324.37
+          ]
+        ]
+      },
+      "properties": {
+        "id": "76305d9a",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            306.76,
+            340.03
+          ],
+          [
+            363.33,
+            210.17
+          ]
+        ]
+      },
+      "properties": {
+        "id": "17c88712",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            368.0,
+            199.32
+          ],
+          [
+            384.25,
+            161.82
+          ]
+        ]
+      },
+      "properties": {
+        "id": "0ea97ccd",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            362.66,
+            210.16
+          ],
+          [
+            244.38,
+            328.13
+          ]
+        ]
+      },
+      "properties": {
+        "id": "4e92af72",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    }
+  ],
+  "geometry": {
+    "nodes": [
+      {
+        "id": "48c4e7a2",
+        "x": 301.19,
+        "y": 358.07,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "ad3a51f4",
+        "x": 54.78,
+        "y": 250.94,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "d1300dbc",
+        "x": 387.84,
+        "y": 162.29,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "a770a9f1",
+        "x": 302.98,
+        "y": 357.52,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "c11110bc",
+        "x": 221.93,
+        "y": 202.39,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "bc074a4f",
+        "x": 259.5,
+        "y": 197.98,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "8b435ecf",
+        "x": 27.67,
+        "y": 265.84,
+        "kind": "endpoint",
+        "confidence": 0.9,
+        "tag": "A"
+      },
+      {
+        "id": "aa32beeb",
+        "x": 51.26,
+        "y": 253.05,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "4572e33d",
+        "x": 258.13,
+        "y": 200.96,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "ee7556e8",
+        "x": 368.12,
+        "y": 201.57,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "0fff746d",
+        "x": 54.58,
+        "y": 247.66,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "701c098a",
+        "x": 222.03,
+        "y": 203.71,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "c3c3035a",
+        "x": 236.92,
+        "y": 203.31,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "6d532143",
+        "x": 62.14,
+        "y": 249.15,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "c511f136",
+        "x": 244.73,
+        "y": 329.82,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "d0bf0b4f",
+        "x": 285.81,
+        "y": 347.7,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "ae033b2f",
+        "x": 61.99,
+        "y": 250.36,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "0f062843",
+        "x": 237.05,
+        "y": 326.48,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "0c8705f8",
+        "x": 238.54,
+        "y": 325.63,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "24b970d9",
+        "x": 238.5,
+        "y": 204.37,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "8b0d9a7f",
+        "x": 243.67,
+        "y": 323.67,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "05ab4029",
+        "x": 364.72,
+        "y": 203.46,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "937257b7",
+        "x": 241.76,
+        "y": 218.12,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "7c267500",
+        "x": 241.76,
+        "y": 324.37,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "075c7f81",
+        "x": 306.76,
+        "y": 340.03,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "95905728",
+        "x": 363.33,
+        "y": 210.17,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "a477babd",
+        "x": 368.0,
+        "y": 199.32,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "38ce66f1",
+        "x": 384.25,
+        "y": 161.82,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "889fc774",
+        "x": 362.66,
+        "y": 210.16,
+        "kind": "endpoint",
+        "confidence": 0.9
+      },
+      {
+        "id": "d62d3eb3",
+        "x": 244.38,
+        "y": 328.13,
+        "kind": "endpoint",
+        "confidence": 0.9
+      }
+    ],
+    "edges": [
+      {
+        "id": "5d56c11e",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            301.19,
+            358.07
+          ],
+          "p2": [
+            54.78,
+            250.94
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "793f201c",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            387.84,
+            162.29
+          ],
+          "p2": [
+            302.98,
+            357.52
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "97dfa8a3",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            221.93,
+            202.39
+          ],
+          "p2": [
+            259.5,
+            197.98
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "5838fbea",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            27.67,
+            265.84
+          ],
+          "p2": [
+            51.26,
+            253.05
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "4afca32b",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            258.13,
+            200.96
+          ],
+          "p2": [
+            368.12,
+            201.57
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "11b2c5de",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            54.58,
+            247.66
+          ],
+          "p2": [
+            222.03,
+            203.71
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "f7fda4b9",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            236.92,
+            203.31
+          ],
+          "p2": [
+            62.14,
+            249.15
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "70346a21",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            244.73,
+            329.82
+          ],
+          "p2": [
+            285.81,
+            347.7
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "c81ee7ce",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            61.99,
+            250.36
+          ],
+          "p2": [
+            237.05,
+            326.48
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "e43b4a08",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            238.54,
+            325.63
+          ],
+          "p2": [
+            238.5,
+            204.37
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "3b3d51bd",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            243.67,
+            323.67
+          ],
+          "p2": [
+            364.72,
+            203.46
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "76305d9a",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            241.76,
+            218.12
+          ],
+          "p2": [
+            241.76,
+            324.37
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "17c88712",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            306.76,
+            340.03
+          ],
+          "p2": [
+            363.33,
+            210.17
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "0ea97ccd",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            368.0,
+            199.32
+          ],
+          "p2": [
+            384.25,
+            161.82
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      },
+      {
+        "id": "4e92af72",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            362.66,
+            210.16
+          ],
+          "p2": [
+            244.38,
+            328.13
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.9
+        }
+      }
+    ],
+    "relations": [
+      {
+        "type": "parallel",
+        "members": [
+          "5d56c11e",
+          "70346a21"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "5d56c11e",
+          "c81ee7ce"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "793f201c",
+          "17c88712"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "793f201c",
+          "0ea97ccd"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "11b2c5de",
+          "f7fda4b9"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "70346a21",
+          "c81ee7ce"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "e43b4a08",
+          "76305d9a"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "3b3d51bd",
+          "4e92af72"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "17c88712",
+          "0ea97ccd"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "5d56c11e",
+          "793f201c"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "5d56c11e",
+          "17c88712"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "5d56c11e",
+          "0ea97ccd"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "793f201c",
+          "70346a21"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "793f201c",
+          "c81ee7ce"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "4afca32b",
+          "e43b4a08"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "4afca32b",
+          "76305d9a"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "70346a21",
+          "17c88712"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "70346a21",
+          "0ea97ccd"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "c81ee7ce",
+          "17c88712"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "perpendicular",
+        "members": [
+          "c81ee7ce",
+          "0ea97ccd"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "8b0d9a7f",
+          "76305d9a"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "05ab4029",
+          "4afca32b"
+        ],
+        "confidence": 0.8
+      }
+    ]
+  }
+}

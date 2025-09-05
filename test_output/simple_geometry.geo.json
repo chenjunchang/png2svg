@@ -1,0 +1,2684 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "simple_geometry.png",
+    "generated": "2025-09-05T07:39:09.834331",
+    "generator": "PNG2SVG v1.0",
+    "config": {
+      "deskew": true,
+      "constraint_solver": false,
+      "yolo_symbols": false,
+      "paddle_ocr": false,
+      "confidence_tta": true
+    }
+  },
+  "statistics": {
+    "total_nodes": 24,
+    "total_edges": 16,
+    "total_relations": 31,
+    "node_types": {
+      "endpoint": 14,
+      "intersection": 1,
+      "center": 9
+    },
+    "edge_types": {
+      "lines": 7,
+      "circles": 9,
+      "arcs": 0,
+      "dashed_lines": 0
+    },
+    "relation_types": {
+      "parallel": 3,
+      "point_on_circle": 20,
+      "point_on_line": 8
+    },
+    "labeled_nodes": 0,
+    "average_confidence": 0.766
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          200.8,
+          180.87
+        ]
+      },
+      "properties": {
+        "id": "29fb82cd",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          300.44,
+          250.8
+        ]
+      },
+      "properties": {
+        "id": "e0d2302f",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.0,
+          149.5
+        ]
+      },
+      "properties": {
+        "id": "9ad93d88",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.0,
+          149.5
+        ]
+      },
+      "properties": {
+        "id": "9ee22697",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.41,
+          50.81
+        ]
+      },
+      "properties": {
+        "id": "2b5a500f",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.19,
+          146.39
+        ]
+      },
+      "properties": {
+        "id": "e7949e49",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.0,
+          200.5
+        ]
+      },
+      "properties": {
+        "id": "a462525e",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.0,
+          200.5
+        ]
+      },
+      "properties": {
+        "id": "a1d97312",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.18,
+          149.58
+        ]
+      },
+      "properties": {
+        "id": "affc3430",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.83,
+          54.43
+        ]
+      },
+      "properties": {
+        "id": "7865f481",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.0,
+          135.0
+        ]
+      },
+      "properties": {
+        "id": "02466202",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.0,
+          50.0
+        ]
+      },
+      "properties": {
+        "id": "33bea9e8",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.0,
+          99.0
+        ]
+      },
+      "properties": {
+        "id": "093af13d",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.0,
+          144.0
+        ]
+      },
+      "properties": {
+        "id": "eaf5caf0",
+        "kind": "endpoint",
+        "tag": "",
+        "confidence": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.22,
+          149.5
+        ]
+      },
+      "properties": {
+        "id": "146f3201",
+        "kind": "intersection",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          249.0,
+          99.0
+        ]
+      },
+      "properties": {
+        "id": "6013e9fb",
+        "kind": "center",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0,
+          103.0
+        ]
+      },
+      "properties": {
+        "id": "c676d53a",
+        "kind": "center",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0,
+          91.0
+        ]
+      },
+      "properties": {
+        "id": "6096071f",
+        "kind": "center",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.0,
+          103.0
+        ]
+      },
+      "properties": {
+        "id": "e871f9a5",
+        "kind": "center",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.0,
+          121.0
+        ]
+      },
+      "properties": {
+        "id": "ee20187f",
+        "kind": "center",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.0,
+          37.0
+        ]
+      },
+      "properties": {
+        "id": "d9ad7203",
+        "kind": "center",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          266.0,
+          116.0
+        ]
+      },
+      "properties": {
+        "id": "7c85df1a",
+        "kind": "center",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          233.0,
+          83.0
+        ]
+      },
+      "properties": {
+        "id": "1af78164",
+        "kind": "center",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.0,
+          97.0
+        ]
+      },
+      "properties": {
+        "id": "4562b2f7",
+        "kind": "center",
+        "tag": "",
+        "confidence": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            200.8,
+            180.87
+          ],
+          [
+            300.44,
+            250.8
+          ]
+        ]
+      },
+      "properties": {
+        "id": "8ca767b1",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            50.0,
+            149.5
+          ],
+          [
+            150.0,
+            149.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "a41a432c",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            99.41,
+            50.81
+          ],
+          [
+            148.19,
+            146.39
+          ]
+        ]
+      },
+      "properties": {
+        "id": "86095ce5",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            50.0,
+            200.5
+          ],
+          [
+            150.0,
+            200.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "0922db2c",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            51.18,
+            149.58
+          ],
+          [
+            97.83,
+            54.43
+          ]
+        ]
+      },
+      "properties": {
+        "id": "c3102527",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            57.0,
+            135.0
+          ],
+          [
+            99.0,
+            50.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "80a6c3a3",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            125.0,
+            99.0
+          ],
+          [
+            148.0,
+            144.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "97404365",
+        "role": "main",
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            298.0,
+            99.0
+          ],
+          [
+            297.06,
+            108.56
+          ],
+          [
+            294.27,
+            117.75
+          ],
+          [
+            289.74,
+            126.22
+          ],
+          [
+            283.65,
+            133.65
+          ],
+          [
+            276.22,
+            139.74
+          ],
+          [
+            267.75,
+            144.27
+          ],
+          [
+            258.56,
+            147.06
+          ],
+          [
+            249.0,
+            148.0
+          ],
+          [
+            239.44,
+            147.06
+          ],
+          [
+            230.25,
+            144.27
+          ],
+          [
+            221.78,
+            139.74
+          ],
+          [
+            214.35,
+            133.65
+          ],
+          [
+            208.26,
+            126.22
+          ],
+          [
+            203.73,
+            117.75
+          ],
+          [
+            200.94,
+            108.56
+          ],
+          [
+            200.0,
+            99.0
+          ],
+          [
+            200.94,
+            89.44
+          ],
+          [
+            203.73,
+            80.25
+          ],
+          [
+            208.26,
+            71.78
+          ],
+          [
+            214.35,
+            64.35
+          ],
+          [
+            221.78,
+            58.26
+          ],
+          [
+            230.25,
+            53.73
+          ],
+          [
+            239.44,
+            50.94
+          ],
+          [
+            249.0,
+            50.0
+          ],
+          [
+            258.56,
+            50.94
+          ],
+          [
+            267.75,
+            53.73
+          ],
+          [
+            276.22,
+            58.26
+          ],
+          [
+            283.65,
+            64.35
+          ],
+          [
+            289.74,
+            71.78
+          ],
+          [
+            294.27,
+            80.25
+          ],
+          [
+            297.06,
+            89.44
+          ],
+          [
+            298.0,
+            99.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "ccbcd6b5",
+        "type": "circle",
+        "center": [
+          249.0,
+          99.0
+        ],
+        "radius": 49.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.0,
+            103.0
+          ],
+          [
+            121.06,
+            112.56
+          ],
+          [
+            118.27,
+            121.75
+          ],
+          [
+            113.74,
+            130.22
+          ],
+          [
+            107.65,
+            137.65
+          ],
+          [
+            100.22,
+            143.74
+          ],
+          [
+            91.75,
+            148.27
+          ],
+          [
+            82.56,
+            151.06
+          ],
+          [
+            73.0,
+            152.0
+          ],
+          [
+            63.44,
+            151.06
+          ],
+          [
+            54.25,
+            148.27
+          ],
+          [
+            45.78,
+            143.74
+          ],
+          [
+            38.35,
+            137.65
+          ],
+          [
+            32.26,
+            130.22
+          ],
+          [
+            27.73,
+            121.75
+          ],
+          [
+            24.94,
+            112.56
+          ],
+          [
+            24.0,
+            103.0
+          ],
+          [
+            24.94,
+            93.44
+          ],
+          [
+            27.73,
+            84.25
+          ],
+          [
+            32.26,
+            75.78
+          ],
+          [
+            38.35,
+            68.35
+          ],
+          [
+            45.78,
+            62.26
+          ],
+          [
+            54.25,
+            57.73
+          ],
+          [
+            63.44,
+            54.94
+          ],
+          [
+            73.0,
+            54.0
+          ],
+          [
+            82.56,
+            54.94
+          ],
+          [
+            91.75,
+            57.73
+          ],
+          [
+            100.22,
+            62.26
+          ],
+          [
+            107.65,
+            68.35
+          ],
+          [
+            113.74,
+            75.78
+          ],
+          [
+            118.27,
+            84.25
+          ],
+          [
+            121.06,
+            93.44
+          ],
+          [
+            122.0,
+            103.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "895f5209",
+        "type": "circle",
+        "center": [
+          73.0,
+          103.0
+        ],
+        "radius": 49.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            204.0,
+            91.0
+          ],
+          [
+            202.87,
+            102.51
+          ],
+          [
+            199.51,
+            113.58
+          ],
+          [
+            194.06,
+            123.78
+          ],
+          [
+            186.72,
+            132.72
+          ],
+          [
+            177.78,
+            140.06
+          ],
+          [
+            167.58,
+            145.51
+          ],
+          [
+            156.51,
+            148.87
+          ],
+          [
+            145.0,
+            150.0
+          ],
+          [
+            133.49,
+            148.87
+          ],
+          [
+            122.42,
+            145.51
+          ],
+          [
+            112.22,
+            140.06
+          ],
+          [
+            103.28,
+            132.72
+          ],
+          [
+            95.94,
+            123.78
+          ],
+          [
+            90.49,
+            113.58
+          ],
+          [
+            87.13,
+            102.51
+          ],
+          [
+            86.0,
+            91.0
+          ],
+          [
+            87.13,
+            79.49
+          ],
+          [
+            90.49,
+            68.42
+          ],
+          [
+            95.94,
+            58.22
+          ],
+          [
+            103.28,
+            49.28
+          ],
+          [
+            112.22,
+            41.94
+          ],
+          [
+            122.42,
+            36.49
+          ],
+          [
+            133.49,
+            33.13
+          ],
+          [
+            145.0,
+            32.0
+          ],
+          [
+            156.51,
+            33.13
+          ],
+          [
+            167.58,
+            36.49
+          ],
+          [
+            177.78,
+            41.94
+          ],
+          [
+            186.72,
+            49.28
+          ],
+          [
+            194.06,
+            58.22
+          ],
+          [
+            199.51,
+            68.42
+          ],
+          [
+            202.87,
+            79.49
+          ],
+          [
+            204.0,
+            91.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "9f2dcf7e",
+        "type": "circle",
+        "center": [
+          145.0,
+          91.0
+        ],
+        "radius": 59.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            176.0,
+            103.0
+          ],
+          [
+            175.06,
+            112.56
+          ],
+          [
+            172.27,
+            121.75
+          ],
+          [
+            167.74,
+            130.22
+          ],
+          [
+            161.65,
+            137.65
+          ],
+          [
+            154.22,
+            143.74
+          ],
+          [
+            145.75,
+            148.27
+          ],
+          [
+            136.56,
+            151.06
+          ],
+          [
+            127.0,
+            152.0
+          ],
+          [
+            117.44,
+            151.06
+          ],
+          [
+            108.25,
+            148.27
+          ],
+          [
+            99.78,
+            143.74
+          ],
+          [
+            92.35,
+            137.65
+          ],
+          [
+            86.26,
+            130.22
+          ],
+          [
+            81.73,
+            121.75
+          ],
+          [
+            78.94,
+            112.56
+          ],
+          [
+            78.0,
+            103.0
+          ],
+          [
+            78.94,
+            93.44
+          ],
+          [
+            81.73,
+            84.25
+          ],
+          [
+            86.26,
+            75.78
+          ],
+          [
+            92.35,
+            68.35
+          ],
+          [
+            99.78,
+            62.26
+          ],
+          [
+            108.25,
+            57.73
+          ],
+          [
+            117.44,
+            54.94
+          ],
+          [
+            127.0,
+            54.0
+          ],
+          [
+            136.56,
+            54.94
+          ],
+          [
+            145.75,
+            57.73
+          ],
+          [
+            154.22,
+            62.26
+          ],
+          [
+            161.65,
+            68.35
+          ],
+          [
+            167.74,
+            75.78
+          ],
+          [
+            172.27,
+            84.25
+          ],
+          [
+            175.06,
+            93.44
+          ],
+          [
+            176.0,
+            103.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "9d786e9b",
+        "type": "circle",
+        "center": [
+          127.0,
+          103.0
+        ],
+        "radius": 49.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.0,
+            121.0
+          ],
+          [
+            132.31,
+            128.02
+          ],
+          [
+            130.26,
+            134.78
+          ],
+          [
+            126.93,
+            141.0
+          ],
+          [
+            122.46,
+            146.46
+          ],
+          [
+            117.0,
+            150.93
+          ],
+          [
+            110.78,
+            154.26
+          ],
+          [
+            104.02,
+            156.31
+          ],
+          [
+            97.0,
+            157.0
+          ],
+          [
+            89.98,
+            156.31
+          ],
+          [
+            83.22,
+            154.26
+          ],
+          [
+            77.0,
+            150.93
+          ],
+          [
+            71.54,
+            146.46
+          ],
+          [
+            67.07,
+            141.0
+          ],
+          [
+            63.74,
+            134.78
+          ],
+          [
+            61.69,
+            128.02
+          ],
+          [
+            61.0,
+            121.0
+          ],
+          [
+            61.69,
+            113.98
+          ],
+          [
+            63.74,
+            107.22
+          ],
+          [
+            67.07,
+            101.0
+          ],
+          [
+            71.54,
+            95.54
+          ],
+          [
+            77.0,
+            91.07
+          ],
+          [
+            83.22,
+            87.74
+          ],
+          [
+            89.98,
+            85.69
+          ],
+          [
+            97.0,
+            85.0
+          ],
+          [
+            104.02,
+            85.69
+          ],
+          [
+            110.78,
+            87.74
+          ],
+          [
+            117.0,
+            91.07
+          ],
+          [
+            122.46,
+            95.54
+          ],
+          [
+            126.93,
+            101.0
+          ],
+          [
+            130.26,
+            107.22
+          ],
+          [
+            132.31,
+            113.98
+          ],
+          [
+            133.0,
+            121.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "f6428fce",
+        "type": "circle",
+        "center": [
+          97.0,
+          121.0
+        ],
+        "radius": 36.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            229.0,
+            37.0
+          ],
+          [
+            226.81,
+            59.24
+          ],
+          [
+            220.32,
+            80.63
+          ],
+          [
+            209.79,
+            100.34
+          ],
+          [
+            195.61,
+            117.61
+          ],
+          [
+            178.34,
+            131.79
+          ],
+          [
+            158.63,
+            142.32
+          ],
+          [
+            137.24,
+            148.81
+          ],
+          [
+            115.0,
+            151.0
+          ],
+          [
+            92.76,
+            148.81
+          ],
+          [
+            71.37,
+            142.32
+          ],
+          [
+            51.66,
+            131.79
+          ],
+          [
+            34.39,
+            117.61
+          ],
+          [
+            20.21,
+            100.34
+          ],
+          [
+            9.68,
+            80.63
+          ],
+          [
+            3.19,
+            59.24
+          ],
+          [
+            1.0,
+            37.0
+          ],
+          [
+            3.19,
+            14.76
+          ],
+          [
+            9.68,
+            -6.63
+          ],
+          [
+            20.21,
+            -26.34
+          ],
+          [
+            34.39,
+            -43.61
+          ],
+          [
+            51.66,
+            -57.79
+          ],
+          [
+            71.37,
+            -68.32
+          ],
+          [
+            92.76,
+            -74.81
+          ],
+          [
+            115.0,
+            -77.0
+          ],
+          [
+            137.24,
+            -74.81
+          ],
+          [
+            158.63,
+            -68.32
+          ],
+          [
+            178.34,
+            -57.79
+          ],
+          [
+            195.61,
+            -43.61
+          ],
+          [
+            209.79,
+            -26.34
+          ],
+          [
+            220.32,
+            -6.63
+          ],
+          [
+            226.81,
+            14.76
+          ],
+          [
+            229.0,
+            37.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "91473dd9",
+        "type": "circle",
+        "center": [
+          115.0,
+          37.0
+        ],
+        "radius": 114.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            295.0,
+            116.0
+          ],
+          [
+            294.44,
+            121.66
+          ],
+          [
+            292.79,
+            127.1
+          ],
+          [
+            290.11,
+            132.11
+          ],
+          [
+            286.51,
+            136.51
+          ],
+          [
+            282.11,
+            140.11
+          ],
+          [
+            277.1,
+            142.79
+          ],
+          [
+            271.66,
+            144.44
+          ],
+          [
+            266.0,
+            145.0
+          ],
+          [
+            260.34,
+            144.44
+          ],
+          [
+            254.9,
+            142.79
+          ],
+          [
+            249.89,
+            140.11
+          ],
+          [
+            245.49,
+            136.51
+          ],
+          [
+            241.89,
+            132.11
+          ],
+          [
+            239.21,
+            127.1
+          ],
+          [
+            237.56,
+            121.66
+          ],
+          [
+            237.0,
+            116.0
+          ],
+          [
+            237.56,
+            110.34
+          ],
+          [
+            239.21,
+            104.9
+          ],
+          [
+            241.89,
+            99.89
+          ],
+          [
+            245.49,
+            95.49
+          ],
+          [
+            249.89,
+            91.89
+          ],
+          [
+            254.9,
+            89.21
+          ],
+          [
+            260.34,
+            87.56
+          ],
+          [
+            266.0,
+            87.0
+          ],
+          [
+            271.66,
+            87.56
+          ],
+          [
+            277.1,
+            89.21
+          ],
+          [
+            282.11,
+            91.89
+          ],
+          [
+            286.51,
+            95.49
+          ],
+          [
+            290.11,
+            99.89
+          ],
+          [
+            292.79,
+            104.9
+          ],
+          [
+            294.44,
+            110.34
+          ],
+          [
+            295.0,
+            116.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "b704c852",
+        "type": "circle",
+        "center": [
+          266.0,
+          116.0
+        ],
+        "radius": 29.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            261.0,
+            83.0
+          ],
+          [
+            260.46,
+            88.46
+          ],
+          [
+            258.87,
+            93.72
+          ],
+          [
+            256.28,
+            98.56
+          ],
+          [
+            252.8,
+            102.8
+          ],
+          [
+            248.56,
+            106.28
+          ],
+          [
+            243.72,
+            108.87
+          ],
+          [
+            238.46,
+            110.46
+          ],
+          [
+            233.0,
+            111.0
+          ],
+          [
+            227.54,
+            110.46
+          ],
+          [
+            222.28,
+            108.87
+          ],
+          [
+            217.44,
+            106.28
+          ],
+          [
+            213.2,
+            102.8
+          ],
+          [
+            209.72,
+            98.56
+          ],
+          [
+            207.13,
+            93.72
+          ],
+          [
+            205.54,
+            88.46
+          ],
+          [
+            205.0,
+            83.0
+          ],
+          [
+            205.54,
+            77.54
+          ],
+          [
+            207.13,
+            72.28
+          ],
+          [
+            209.72,
+            67.44
+          ],
+          [
+            213.2,
+            63.2
+          ],
+          [
+            217.44,
+            59.72
+          ],
+          [
+            222.28,
+            57.13
+          ],
+          [
+            227.54,
+            55.54
+          ],
+          [
+            233.0,
+            55.0
+          ],
+          [
+            238.46,
+            55.54
+          ],
+          [
+            243.72,
+            57.13
+          ],
+          [
+            248.56,
+            59.72
+          ],
+          [
+            252.8,
+            63.2
+          ],
+          [
+            256.28,
+            67.44
+          ],
+          [
+            258.87,
+            72.28
+          ],
+          [
+            260.46,
+            77.54
+          ],
+          [
+            261.0,
+            83.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "c4c9383e",
+        "type": "circle",
+        "center": [
+          233.0,
+          83.0
+        ],
+        "radius": 28.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0,
+            97.0
+          ],
+          [
+            126.54,
+            101.68
+          ],
+          [
+            125.17,
+            106.18
+          ],
+          [
+            122.96,
+            110.33
+          ],
+          [
+            119.97,
+            113.97
+          ],
+          [
+            116.33,
+            116.96
+          ],
+          [
+            112.18,
+            119.17
+          ],
+          [
+            107.68,
+            120.54
+          ],
+          [
+            103.0,
+            121.0
+          ],
+          [
+            98.32,
+            120.54
+          ],
+          [
+            93.82,
+            119.17
+          ],
+          [
+            89.67,
+            116.96
+          ],
+          [
+            86.03,
+            113.97
+          ],
+          [
+            83.04,
+            110.33
+          ],
+          [
+            80.83,
+            106.18
+          ],
+          [
+            79.46,
+            101.68
+          ],
+          [
+            79.0,
+            97.0
+          ],
+          [
+            79.46,
+            92.32
+          ],
+          [
+            80.83,
+            87.82
+          ],
+          [
+            83.04,
+            83.67
+          ],
+          [
+            86.03,
+            80.03
+          ],
+          [
+            89.67,
+            77.04
+          ],
+          [
+            93.82,
+            74.83
+          ],
+          [
+            98.32,
+            73.46
+          ],
+          [
+            103.0,
+            73.0
+          ],
+          [
+            107.68,
+            73.46
+          ],
+          [
+            112.18,
+            74.83
+          ],
+          [
+            116.33,
+            77.04
+          ],
+          [
+            119.97,
+            80.03
+          ],
+          [
+            122.96,
+            83.67
+          ],
+          [
+            125.17,
+            87.82
+          ],
+          [
+            126.54,
+            92.32
+          ],
+          [
+            127.0,
+            97.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "93b19bbf",
+        "type": "circle",
+        "center": [
+          103.0,
+          97.0
+        ],
+        "radius": 24.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    }
+  ],
+  "geometry": {
+    "nodes": [
+      {
+        "id": "29fb82cd",
+        "x": 200.8,
+        "y": 180.87,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "e0d2302f",
+        "x": 300.44,
+        "y": 250.8,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "9ad93d88",
+        "x": 50.0,
+        "y": 149.5,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "9ee22697",
+        "x": 150.0,
+        "y": 149.5,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "2b5a500f",
+        "x": 99.41,
+        "y": 50.81,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "e7949e49",
+        "x": 148.19,
+        "y": 146.39,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "a462525e",
+        "x": 50.0,
+        "y": 200.5,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "a1d97312",
+        "x": 150.0,
+        "y": 200.5,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "affc3430",
+        "x": 51.18,
+        "y": 149.58,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "7865f481",
+        "x": 97.83,
+        "y": 54.43,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "02466202",
+        "x": 57.0,
+        "y": 135.0,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "33bea9e8",
+        "x": 99.0,
+        "y": 50.0,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "093af13d",
+        "x": 125.0,
+        "y": 99.0,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "eaf5caf0",
+        "x": 148.0,
+        "y": 144.0,
+        "kind": "endpoint",
+        "confidence": 0.7
+      },
+      {
+        "id": "146f3201",
+        "x": 51.22,
+        "y": 149.5,
+        "kind": "intersection",
+        "confidence": 0.8
+      },
+      {
+        "id": "6013e9fb",
+        "x": 249.0,
+        "y": 99.0,
+        "kind": "center",
+        "confidence": 0.8
+      },
+      {
+        "id": "c676d53a",
+        "x": 73.0,
+        "y": 103.0,
+        "kind": "center",
+        "confidence": 0.8
+      },
+      {
+        "id": "6096071f",
+        "x": 145.0,
+        "y": 91.0,
+        "kind": "center",
+        "confidence": 0.8
+      },
+      {
+        "id": "e871f9a5",
+        "x": 127.0,
+        "y": 103.0,
+        "kind": "center",
+        "confidence": 0.8
+      },
+      {
+        "id": "ee20187f",
+        "x": 97.0,
+        "y": 121.0,
+        "kind": "center",
+        "confidence": 0.8
+      },
+      {
+        "id": "d9ad7203",
+        "x": 115.0,
+        "y": 37.0,
+        "kind": "center",
+        "confidence": 0.8
+      },
+      {
+        "id": "7c85df1a",
+        "x": 266.0,
+        "y": 116.0,
+        "kind": "center",
+        "confidence": 0.8
+      },
+      {
+        "id": "1af78164",
+        "x": 233.0,
+        "y": 83.0,
+        "kind": "center",
+        "confidence": 0.8
+      },
+      {
+        "id": "4562b2f7",
+        "x": 103.0,
+        "y": 97.0,
+        "kind": "center",
+        "confidence": 0.8
+      }
+    ],
+    "edges": [
+      {
+        "id": "8ca767b1",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            200.8,
+            180.87
+          ],
+          "p2": [
+            300.44,
+            250.8
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      },
+      {
+        "id": "a41a432c",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            50.0,
+            149.5
+          ],
+          "p2": [
+            150.0,
+            149.5
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      },
+      {
+        "id": "86095ce5",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            99.41,
+            50.81
+          ],
+          "p2": [
+            148.19,
+            146.39
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      },
+      {
+        "id": "0922db2c",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            50.0,
+            200.5
+          ],
+          "p2": [
+            150.0,
+            200.5
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      },
+      {
+        "id": "c3102527",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            51.18,
+            149.58
+          ],
+          "p2": [
+            97.83,
+            54.43
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      },
+      {
+        "id": "80a6c3a3",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            57.0,
+            135.0
+          ],
+          "p2": [
+            99.0,
+            50.0
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      },
+      {
+        "id": "97404365",
+        "role": "main",
+        "type": "line",
+        "endpoints": {
+          "p1": [
+            125.0,
+            99.0
+          ],
+          "p2": [
+            148.0,
+            144.0
+          ]
+        },
+        "attributes": {
+          "dashed": false,
+          "thickness": 2,
+          "confidence": 0.7
+        }
+      },
+      {
+        "id": "ccbcd6b5",
+        "role": "main",
+        "type": "circle",
+        "center": [
+          249.0,
+          99.0
+        ],
+        "radius": 49.0,
+        "theta1": 0.0,
+        "theta2": 360.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      },
+      {
+        "id": "895f5209",
+        "role": "main",
+        "type": "circle",
+        "center": [
+          73.0,
+          103.0
+        ],
+        "radius": 49.0,
+        "theta1": 0.0,
+        "theta2": 360.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      },
+      {
+        "id": "9f2dcf7e",
+        "role": "main",
+        "type": "circle",
+        "center": [
+          145.0,
+          91.0
+        ],
+        "radius": 59.0,
+        "theta1": 0.0,
+        "theta2": 360.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      },
+      {
+        "id": "9d786e9b",
+        "role": "main",
+        "type": "circle",
+        "center": [
+          127.0,
+          103.0
+        ],
+        "radius": 49.0,
+        "theta1": 0.0,
+        "theta2": 360.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      },
+      {
+        "id": "f6428fce",
+        "role": "main",
+        "type": "circle",
+        "center": [
+          97.0,
+          121.0
+        ],
+        "radius": 36.0,
+        "theta1": 0.0,
+        "theta2": 360.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      },
+      {
+        "id": "91473dd9",
+        "role": "main",
+        "type": "circle",
+        "center": [
+          115.0,
+          37.0
+        ],
+        "radius": 114.0,
+        "theta1": 0.0,
+        "theta2": 360.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      },
+      {
+        "id": "b704c852",
+        "role": "main",
+        "type": "circle",
+        "center": [
+          266.0,
+          116.0
+        ],
+        "radius": 29.0,
+        "theta1": 0.0,
+        "theta2": 360.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      },
+      {
+        "id": "c4c9383e",
+        "role": "main",
+        "type": "circle",
+        "center": [
+          233.0,
+          83.0
+        ],
+        "radius": 28.0,
+        "theta1": 0.0,
+        "theta2": 360.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      },
+      {
+        "id": "93b19bbf",
+        "role": "main",
+        "type": "circle",
+        "center": [
+          103.0,
+          97.0
+        ],
+        "radius": 24.0,
+        "theta1": 0.0,
+        "theta2": 360.0,
+        "attributes": {
+          "confidence": 0.8,
+          "kind": "circle"
+        }
+      }
+    ],
+    "relations": [
+      {
+        "type": "parallel",
+        "members": [
+          "a41a432c",
+          "0922db2c"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "86095ce5",
+          "97404365"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "parallel",
+        "members": [
+          "c3102527",
+          "80a6c3a3"
+        ],
+        "confidence": 0.7
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "9ad93d88",
+          "895f5209"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "9ee22697",
+          "9f2dcf7e"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "9ee22697",
+          "9d786e9b"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "2b5a500f",
+          "9f2dcf7e"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "e7949e49",
+          "9d786e9b"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "e7949e49",
+          "91473dd9"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "affc3430",
+          "895f5209"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "7865f481",
+          "80a6c3a3"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "7865f481",
+          "9f2dcf7e"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "02466202",
+          "c3102527"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "02466202",
+          "91473dd9"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "33bea9e8",
+          "9f2dcf7e"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "093af13d",
+          "86095ce5"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "093af13d",
+          "f6428fce"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "093af13d",
+          "93b19bbf"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "eaf5caf0",
+          "86095ce5"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "eaf5caf0",
+          "9d786e9b"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "eaf5caf0",
+          "91473dd9"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "146f3201",
+          "895f5209"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "c676d53a",
+          "c3102527"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "c676d53a",
+          "80a6c3a3"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "e871f9a5",
+          "86095ce5"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_line",
+        "members": [
+          "e871f9a5",
+          "97404365"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "e871f9a5",
+          "f6428fce"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "e871f9a5",
+          "93b19bbf"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "ee20187f",
+          "9f2dcf7e"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "ee20187f",
+          "93b19bbf"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "type": "point_on_circle",
+        "members": [
+          "d9ad7203",
+          "9f2dcf7e"
+        ],
+        "confidence": 0.8
+      }
+    ]
+  }
+}
