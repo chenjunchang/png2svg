@@ -57,3 +57,4 @@ static/pab-ticket-extension.zip
 .cache
 uv.lock
 eval/
+out/
