@@ -78,7 +78,7 @@ def run(pre: PreprocessOut, cfg: Config) -> Primitives:
     
     # Classify dashed lines
     for line in lines:
-        line.dashed = is_dashed_line(line, pre.img_bw)
+        line.dashed = is_dashed_line(line, pre.img_bw, cfg)
         line.role = "aux" if line.dashed else "main"
     
     dashed_count = sum(1 for line in lines if line.dashed)
@@ -355,11 +355,10 @@ def detect_circles_and_arcs(img_gray: np.ndarray, img_bw: np.ndarray, cfg: Confi
     circles.extend(circles_hough)
     logger.debug(f"HoughCircles detected {len(circles_hough)} circles")
     
-    # TODO: Add arc detection using edge fitting
-    # This would involve:
-    # 1. Find edge contours
-    # 2. Fit circle to curved contours using RANSAC
-    # 3. Determine arc angles for partial circles
+    # Add arc detection using edge fitting
+    arcs = detect_arcs(img_gray, img_bw, cfg)
+    circles.extend(arcs)
+    logger.debug(f"Arc detection found {len(arcs)} arcs")
     
     return circles
 
@@ -404,7 +403,7 @@ def detect_circles_hough(img_gray: np.ndarray, cfg: Config) -> List[CircleArc]:
     return circles
 
 
-def is_dashed_line(line: LineSeg, img_bw: np.ndarray) -> bool:
+def is_dashed_line(line: LineSeg, img_bw: np.ndarray, cfg: Config = None) -> bool:
     """
     Determine if a line segment represents a dashed line by sampling pixels.
     Enhanced algorithm with better noise handling and pattern recognition.
@@ -438,12 +437,11 @@ def is_dashed_line(line: LineSeg, img_bw: np.ndarray) -> bool:
     x_samples = np.clip(x_samples, 0, w - 1).astype(int)
     y_samples = np.clip(y_samples, 0, h - 1).astype(int)
     
-    # Sample pixel values with neighborhood averaging for robustness
+    # Sample pixel values directly (more sensitive to gaps)
     values = []
     for x, y in zip(x_samples, y_samples):
-        # Sample 3x3 neighborhood and take maximum (dilated sampling)
-        neighborhood = img_bw[max(0, y-1):min(h, y+2), max(0, x-1):min(w, x+2)]
-        values.append(neighborhood.max() > 0)
+        # Direct pixel sampling - more sensitive to dashed line gaps
+        values.append(img_bw[y, x] > 0)
     
     values = np.array(values)
     
@@ -467,45 +465,65 @@ def is_dashed_line(line: LineSeg, img_bw: np.ndarray) -> bool:
     on_runs = [run_len for is_on, run_len in runs if is_on]
     off_runs = [run_len for is_on, run_len in runs if not is_on]
     
+    # Get configuration parameters or use defaults (updated for mathematical diagrams)
+    min_dash_count = 1
+    regularity_cv = 2.0
+    on_ratio_min = 0.05
+    on_ratio_max = 0.85
+    min_gap_length = 1
+    dash_gap_ratio_min = 0.01
+    dash_gap_ratio_max = 10.0
+    
+    if cfg and hasattr(cfg.algorithms, 'dashed_line'):
+        dl_cfg = cfg.algorithms.dashed_line
+        min_dash_count = getattr(dl_cfg, 'min_dash_count', min_dash_count)
+        regularity_cv = getattr(dl_cfg, 'regularity_cv', regularity_cv)
+        on_ratio_min = getattr(dl_cfg, 'on_ratio_min', on_ratio_min)
+        on_ratio_max = getattr(dl_cfg, 'on_ratio_max', on_ratio_max)
+        min_gap_length = getattr(dl_cfg, 'min_gap_length', min_gap_length)
+        dash_gap_ratio_min = getattr(dl_cfg, 'dash_gap_ratio_min', dash_gap_ratio_min)
+        dash_gap_ratio_max = getattr(dl_cfg, 'dash_gap_ratio_max', dash_gap_ratio_max)
+
     # Enhanced criteria for dashed line detection:
-    # 1. At least 2 ON segments (dashes) and 1 OFF segment (gap)
-    if len(on_runs) < 2 or len(off_runs) < 1:
+    # 1. At least min_dash_count ON segments and 1 OFF segment
+    if len(on_runs) < min_dash_count or len(off_runs) < 1:
         return False
     
     # 2. ON segments should be substantial (not just noise)
     mean_on_length = np.mean(on_runs)
-    if mean_on_length < 3:
+    if mean_on_length < 1.5:  # Allow smaller dashes for fine mathematical diagrams
         return False
     
-    # 3. Check for reasonable gap lengths
+    # 3. Check for reasonable gap lengths - allow very small gaps for fine dashed lines
     mean_off_length = np.mean(off_runs)
-    if mean_off_length < 2:  # Gaps too small, likely continuous line with noise
+    # For mathematical diagrams, gaps can be very small (even 1 pixel)
+    if mean_off_length < 1.0:  
         return False
     
-    # 4. Check ratio of ON to total length (dashed lines typically 25-75% ON)
+    # 4. Check ratio of ON to total length
     total_on_length = sum(on_runs)
     on_ratio = total_on_length / len(values)
     
-    if on_ratio < 0.25 or on_ratio > 0.75:
+    if on_ratio < on_ratio_min or on_ratio > on_ratio_max:
         return False
     
     # 5. Check for pattern regularity (dashes should be somewhat regular)
     if len(on_runs) >= 3:
         on_std = np.std(on_runs)
         on_cv = on_std / mean_on_length if mean_on_length > 0 else float('inf')
-        if on_cv > 1.5:  # Too irregular, likely not intentional dashes
+        if on_cv > regularity_cv:
             return False
     
     # 6. Check gap regularity
     if len(off_runs) >= 2:
         off_std = np.std(off_runs)
         off_cv = off_std / mean_off_length if mean_off_length > 0 else float('inf')
-        if off_cv > 1.5:  # Too irregular
+        if off_cv > regularity_cv:
             return False
     
     # 7. Final check: ensure dashes and gaps are in reasonable proportion
     dash_gap_ratio = mean_on_length / mean_off_length
-    if dash_gap_ratio < 0.3 or dash_gap_ratio > 5.0:  # Extreme ratios are unlikely
+    if dash_gap_ratio < dash_gap_ratio_min or dash_gap_ratio > dash_gap_ratio_max:
         return False
     
     return True
@@ -540,6 +558,178 @@ def get_run_lengths(binary_array: np.ndarray) -> List[Tuple[bool, int]]:
     runs.append((current_value, current_length))
     
     return runs
+
+
+def detect_arcs(img_gray: np.ndarray, img_bw: np.ndarray, cfg: Config) -> List[CircleArc]:
+    """
+    Detect arcs using edge contour fitting.
+    
+    Args:
+        img_gray: Grayscale image
+        img_bw: Binary image
+        cfg: Configuration object
+        
+    Returns:
+        List of detected arcs
+    """
+    arcs = []
+    
+    try:
+        # Find contours in binary image
+        contours, _ = cv2.findContours(img_bw, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+        
+        # Get configuration parameters or use defaults
+        min_contour_points = 5
+        min_contour_area = 50
+        coverage_threshold = 0.9
+        aspect_ratio_min = 0.6
+        
+        if cfg and hasattr(cfg.algorithms, 'arc_detection'):
+            arc_cfg = cfg.algorithms.arc_detection
+            min_contour_points = getattr(arc_cfg, 'min_contour_points', min_contour_points)
+            min_contour_area = getattr(arc_cfg, 'min_contour_area', min_contour_area)
+            coverage_threshold = getattr(arc_cfg, 'coverage_threshold', coverage_threshold)
+            aspect_ratio_min = getattr(arc_cfg, 'aspect_ratio_min', aspect_ratio_min)
+
+        for contour in contours:
+            # Need at least min_contour_points to fit a circle/ellipse
+            if len(contour) < min_contour_points:
+                continue
+            
+            # Skip very small contours
+            if cv2.contourArea(contour) < min_contour_area:
+                continue
+            
+            # Try to fit a circle using least squares
+            circle = fit_circle_to_contour(contour)
+            if circle is None:
+                continue
+            
+            cx, cy, r = circle
+            
+            # Filter by reasonable radius
+            min_radius = getattr(cfg.algorithms.hough_circles, 'min_radius', 8)
+            max_radius = getattr(cfg.algorithms.hough_circles, 'max_radius', 0)
+            
+            if r < min_radius:
+                continue
+            if max_radius > 0 and r > max_radius:
+                continue
+            
+            # Calculate angular coverage to distinguish arcs from circles
+            coverage, start_angle, end_angle = calculate_angular_coverage(contour, circle)
+            
+            # If coverage is less than threshold, consider it an arc
+            if coverage < coverage_threshold:
+                arcs.append(CircleArc(
+                    cx=float(cx),
+                    cy=float(cy),
+                    r=float(r),
+                    theta1=float(start_angle),
+                    theta2=float(end_angle),
+                    kind="arc",
+                    confidence=0.7
+                ))
+            else:
+                # Full circle - only add if not already detected by HoughCircles
+                # This is a fallback for circles missed by Hough
+                arcs.append(CircleArc(
+                    cx=float(cx),
+                    cy=float(cy),
+                    r=float(r),
+                    kind="circle",
+                    confidence=0.6  # Lower confidence than Hough-detected circles
+                ))
+    
+    except Exception as e:
+        logger = logging.getLogger('png2svg.detect_primitives')
+        logger.warning(f"Arc detection failed: {e}")
+    
+    return arcs
+
+
+def fit_circle_to_contour(contour: np.ndarray) -> Optional[Tuple[float, float, float]]:
+    """
+    Fit a circle to a contour using least squares method.
+    
+    Args:
+        contour: Contour points
+        
+    Returns:
+        (cx, cy, r) or None if fitting fails
+    """
+    try:
+        # Convert contour to points
+        points = contour.reshape(-1, 2).astype(np.float32)
+        
+        if len(points) < 3:
+            return None
+        
+        # Use cv2.fitEllipse as approximation for circle fitting
+        ellipse = cv2.fitEllipse(points)
+        
+        # Extract center and average radius
+        (cx, cy), (w, h), angle = ellipse
+        r = (w + h) / 4.0  # Average of semi-axes
+        
+        # Only accept if it's reasonably circular (not too elliptical)
+        aspect_ratio = min(w, h) / max(w, h) if max(w, h) > 0 else 0
+        # Use default threshold since we don't have access to config here
+        if aspect_ratio < 0.6:  # Too elliptical
+            return None
+        
+        return float(cx), float(cy), float(r)
+    
+    except Exception:
+        return None
+
+
+def calculate_angular_coverage(contour: np.ndarray, circle: Tuple[float, float, float]) -> Tuple[float, float, float]:
+    """
+    Calculate how much of a circle is covered by a contour.
+    
+    Args:
+        contour: Contour points
+        circle: (cx, cy, r) circle parameters
+        
+    Returns:
+        (coverage_ratio, start_angle, end_angle) in degrees
+    """
+    cx, cy, r = circle
+    points = contour.reshape(-1, 2)
+    
+    # Calculate angles for all contour points
+    angles = []
+    for x, y in points:
+        angle = math.degrees(math.atan2(y - cy, x - cx))
+        if angle < 0:
+            angle += 360
+        angles.append(angle)
+    
+    if not angles:
+        return 0.0, 0.0, 0.0
+    
+    angles = sorted(angles)
+    
+    # Find the largest gap between consecutive angles
+    max_gap = 0
+    gap_start = 0
+    
+    for i in range(len(angles)):
+        next_i = (i + 1) % len(angles)
+        gap = (angles[next_i] - angles[i]) % 360
+        if gap > max_gap:
+            max_gap = gap
+            gap_start = angles[next_i]
+    
+    # Coverage is 1 minus the largest gap ratio
+    coverage = 1.0 - (max_gap / 360.0)
+    
+    # Arc spans from end of gap to start of gap
+    start_angle = gap_start % 360
+    end_angle = (gap_start - max_gap) % 360
+    
+    return coverage, start_angle, end_angle
 
 
 def filter_primitives_by_size(primitives: Primitives, cfg: Config) -> Primitives:

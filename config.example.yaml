@@ -79,3 +79,20 @@ algorithms:
     lambda_collinear: 0.5
     lambda_equal_length: 0.8
     lambda_point_on_circle: 1.0
+  
+  # Dashed Line Detection
+  dashed_line:
+    min_dash_count: 1           # 最少虚线段数
+    regularity_cv: 2.0          # 规律性变异系数阈值
+    on_ratio_min: 0.05          # 最小ON比例 (lowered for line fragments)
+    on_ratio_max: 0.85          # 最大ON比例 (increased to match observed patterns)
+    min_gap_length: 1           # 最小间隙长度 (decreased to allow 1-pixel gaps)
+    dash_gap_ratio_min: 0.01    # 虚线段与间隙比例最小值 (much lower for fragments)
+    dash_gap_ratio_max: 10.0    # 虚线段与间隙比例最大值 (increased for varied patterns)
+    
+  # Arc Detection  
+  arc_detection:
+    min_contour_points: 5       # 轮廓最少点数
+    min_contour_area: 50        # 轮廓最小面积
+    coverage_threshold: 0.9     # 圆弧覆盖率阈值
+    aspect_ratio_min: 0.6       # 最小长宽比（用于圆形度检查）

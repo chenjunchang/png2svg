@@ -65,6 +65,27 @@ class AlgorithmConstraintsConfig:
 
 
 @dataclass
+class AlgorithmDashedLineConfig:
+    """Dashed line detection algorithm configuration."""
+    min_dash_count: int = 1
+    regularity_cv: float = 2.0
+    on_ratio_min: float = 0.05
+    on_ratio_max: float = 0.85
+    min_gap_length: int = 1
+    dash_gap_ratio_min: float = 0.01
+    dash_gap_ratio_max: float = 10.0
+
+
+@dataclass
+class AlgorithmArcDetectionConfig:
+    """Arc detection algorithm configuration."""
+    min_contour_points: int = 5
+    min_contour_area: int = 50
+    coverage_threshold: float = 0.9
+    aspect_ratio_min: float = 0.6
+
+
+@dataclass
 class AlgorithmsConfig:
     """All algorithm configurations."""
     lsd: AlgorithmLSDConfig = field(default_factory=AlgorithmLSDConfig)
@@ -72,6 +93,8 @@ class AlgorithmsConfig:
     hough_circles: AlgorithmHoughCirclesConfig = field(default_factory=AlgorithmHoughCirclesConfig)
     preprocess: AlgorithmPreprocessConfig = field(default_factory=AlgorithmPreprocessConfig)
     constraints: AlgorithmConstraintsConfig = field(default_factory=AlgorithmConstraintsConfig)
+    dashed_line: AlgorithmDashedLineConfig = field(default_factory=AlgorithmDashedLineConfig)
+    arc_detection: AlgorithmArcDetectionConfig = field(default_factory=AlgorithmArcDetectionConfig)
 
 
 @dataclass
