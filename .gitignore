@@ -59,5 +59,6 @@ uv.lock
 eval/
 out/
 outputs/
+output_test/
 datasets/
 runs/
