@@ -29,11 +29,11 @@ build:
 
 # Quick training for testing
 train-small:
-	python scripts/01_train.py --cfg ../configs/train.small.yaml --name symbols_small
+	python scripts/01_train.py --cfg configs/train.small.yaml --name symbols_small
 
 # Full training for production
 train-full:
-	python scripts/01_train.py --cfg ../configs/train.full.yaml --name symbols_full
+	python scripts/01_train.py --cfg configs/train.full.yaml --name symbols_full
 
 # Resume training
 resume:
