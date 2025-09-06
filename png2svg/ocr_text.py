@@ -119,8 +119,7 @@ def _run_paddleocr(img_bgr: np.ndarray, config: Config) -> List[OCRResult]:
         # Initialize PaddleOCR
         ocr = paddleocr.PaddleOCR(
             use_angle_cls=True,  # Enable text angle classification
-            lang='en',           # Primary language
-            show_log=False       # Suppress PaddleOCR logs
+            lang='en'           # Primary language
         )
         
         # Run OCR
@@ -129,21 +128,39 @@ def _run_paddleocr(img_bgr: np.ndarray, config: Config) -> List[OCRResult]:
         ocr_items = []
         if results and results[0]:
             for detection in results[0]:
-                # Extract bounding box and text
-                bbox_points, (text, confidence) = detection
-                
-                # Convert bbox points to (x, y, w, h)
-                x_coords = [p[0] for p in bbox_points]
-                y_coords = [p[1] for p in bbox_points]
-                x, y = int(min(x_coords)), int(min(y_coords))
-                w, h = int(max(x_coords) - x), int(max(y_coords) - y)
-                
-                if text.strip() and confidence > 0.1:
-                    ocr_items.append(OCRResult(
-                        text=text,
-                        bbox=(x, y, w, h),
-                        confidence=float(confidence)
-                    ))
+                try:
+                    # Handle different PaddleOCR formats
+                    if len(detection) == 2:
+                        # Format: [bbox_points, (text, confidence)]
+                        bbox_points, (text, confidence) = detection
+                    elif len(detection) == 3:
+                        # Format: [bbox_points, text, confidence] 
+                        bbox_points, text, confidence = detection
+                    else:
+                        # Try to extract from the structure
+                        bbox_points = detection[0]
+                        if isinstance(detection[1], (list, tuple)) and len(detection[1]) >= 2:
+                            text, confidence = detection[1][0], detection[1][1]
+                        else:
+                            text = str(detection[1])
+                            confidence = 1.0
+                    
+                    # Convert bbox points to (x, y, w, h)
+                    x_coords = [p[0] for p in bbox_points]
+                    y_coords = [p[1] for p in bbox_points]
+                    x, y = int(min(x_coords)), int(min(y_coords))
+                    w, h = int(max(x_coords) - x), int(max(y_coords) - y)
+                    
+                    if text.strip() and confidence > 0.1:
+                        ocr_items.append(OCRResult(
+                            text=text,
+                            bbox=(x, y, w, h),
+                            confidence=float(confidence)
+                        ))
+                except Exception as parse_error:
+                    # Log the parsing error for debugging
+                    logging.getLogger(__name__).debug(f"Failed to parse OCR detection: {detection}, error: {parse_error}")
+                    continue
         
         return ocr_items
         
