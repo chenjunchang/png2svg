@@ -1,0 +1,34 @@
+# YOLO Training Dependencies
+ultralytics>=8.3.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ONNX Export
+onnx>=1.17.0
+onnxruntime>=1.17.0
+onnxsim>=0.4.0
+
+# Data Processing
+opencv-python>=4.9.0
+numpy>=1.24.0
+pillow>=10.0.0
+scikit-image>=0.20.0
+
+# Configuration and Templates  
+pyyaml>=6.0.0
+jinja2>=3.1.0
+
+# Progress and Logging
+tqdm>=4.66.0
+tensorboard>=2.15.0
+
+# Visualization and Analysis
+matplotlib>=3.8.0
+seaborn>=0.12.0
+
+# XML Processing (for Geometry3K)
+lxml>=4.9.0
+
+# Optional: GPU acceleration
+# cuda-runtime>=11.8  # Uncomment if using CUDA
+# cupy-cuda11x        # Uncomment if using CuPy with CUDA 11.x

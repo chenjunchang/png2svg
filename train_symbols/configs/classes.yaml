@@ -1,0 +1,64 @@
+# 目标检测类别（顺序=class id）
+names:
+  - right_angle         # 直角小方块
+  - arc_1               # 角弧-单弧
+  - arc_2               # 角弧-双弧
+  - arc_3               # 角弧-三弧
+  - tick_1              # 等长刻度-一道
+  - tick_2              # 等长刻度-两道
+  - tick_3              # 等长刻度-三道
+  - parallel_mark       # 平行标记（斜杠对）
+  - arrow_head          # 箭头头部（向量/指示）
+  - dot_filled          # 实心点
+  - dot_hollow          # 空心点
+  - extend_mark         # 延长线标记（若数据没有，可保留空类）
+
+# 各数据集→统一类的映射（多对一允许；缺失类自动忽略）
+mapping:
+  pgdp5k:
+    perpendicular: right_angle
+    angle-1: arc_1
+    angle-2: arc_2
+    angle-3: arc_3
+    bar-1: tick_1
+    bar-2: tick_2
+    bar-3: tick_3
+    parallel: parallel_mark
+    arrow_head: arrow_head
+    head: arrow_head
+    dot_filled: dot_filled
+    dot_hollow: dot_hollow
+  pgps9k:
+    perpendicular: right_angle
+    angle-1: arc_1
+    angle-2: arc_2
+    angle-3: arc_3
+    bar-1: tick_1
+    bar-2: tick_2
+    bar-3: tick_3
+    parallel: parallel_mark
+    arrow_head: arrow_head
+    head: arrow_head
+    dot_filled: dot_filled
+    dot_hollow: dot_hollow
+  geometry3k:
+    # 按实际字段名映射（示例；以你本地的类名为准）
+    right_angle_mark: right_angle
+    angle_mark_1: arc_1
+    angle_mark_2: arc_2
+    angle_mark_3: arc_3
+    equal_tick_1: tick_1
+    equal_tick_2: tick_2
+    equal_tick_3: tick_3
+    parallel_mark: parallel_mark
+    arrow_head: arrow_head
+    point_filled: dot_filled
+    point_hollow: dot_hollow
+    perpendicular: right_angle
+    angle-1: arc_1
+    angle-2: arc_2
+    angle-3: arc_3
+    bar-1: tick_1
+    bar-2: tick_2
+    bar-3: tick_3
+    parallel: parallel_mark

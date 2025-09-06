@@ -1,0 +1,7 @@
+imgsz: 1280         # 小目标建议更大分辨率
+epochs: 160
+batch: 16
+optimizer: AdamW
+lr0: 0.001
+cos_lr: true
+mosaic: 0.7

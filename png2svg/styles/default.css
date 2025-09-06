@@ -1,0 +1,183 @@
+/* Default CSS styles for PNG2SVG generated SVG files */
+
+/* Layer-based styling */
+.main-layer {
+    stroke: #000000;
+    stroke-width: 2px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.auxiliary-layer {
+    stroke: #000000;
+    stroke-width: 1px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.7;
+    stroke-dasharray: 6,6;
+}
+
+.symbols-layer {
+    stroke: #000000;
+    stroke-width: 1px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.text-layer {
+    font-family: 'Times New Roman', 'Times', serif;
+    font-size: 14px;
+    text-anchor: middle;
+    dominant-baseline: central;
+    fill: #000000;
+}
+
+.background-layer {
+    fill: #ffffff;
+    stroke: none;
+}
+
+/* Element-specific styles */
+[data-element-type="line"] {
+    stroke-linecap: round;
+}
+
+[data-element-type="circle"] {
+    fill: none;
+}
+
+[data-element-type="arc"] {
+    fill: none;
+}
+
+[data-role="main"] {
+    stroke-width: 2px;
+}
+
+[data-role="aux"] {
+    stroke-width: 1px;
+    stroke-dasharray: 6,6;
+    opacity: 0.7;
+}
+
+[data-role="hidden"] {
+    stroke-width: 0.5px;
+    stroke-dasharray: 2,2;
+    opacity: 0.4;
+}
+
+/* Symbol-specific styles */
+[data-symbol-type="right_angle"] {
+    stroke-width: 1px;
+    fill: none;
+}
+
+[data-symbol-type="arrow_head"] {
+    fill: #000000;
+    stroke: #000000;
+    stroke-width: 1px;
+}
+
+[data-symbol-type="tick_mark"] {
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+}
+
+[data-symbol-type="parallel_mark"] {
+    stroke-width: 1px;
+}
+
+/* Node-specific styles */
+[data-node-type="intersection"] .node-label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+[data-node-type="endpoint"] .node-label {
+    font-size: 12px;
+}
+
+[data-node-type="center"] .node-label {
+    font-size: 10px;
+    font-style: italic;
+}
+
+/* Text type styles */
+.node-label {
+    font-weight: bold;
+    font-size: 12px;
+    fill: #000000;
+}
+
+.angle-label {
+    font-size: 10px;
+    font-style: italic;
+    fill: #0066cc;
+}
+
+.dimension {
+    font-size: 10px;
+    fill: #006600;
+}
+
+.variable-label {
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* Confidence-based styling */
+[data-confidence*="0.9"] {
+    stroke-opacity: 1.0;
+}
+
+[data-confidence*="0.8"] {
+    stroke-opacity: 0.9;
+}
+
+[data-confidence*="0.7"] {
+    stroke-opacity: 0.8;
+}
+
+[data-confidence*="0.6"] {
+    stroke-opacity: 0.7;
+}
+
+/* Responsive design for different sizes */
+@media screen and (max-width: 600px) {
+    .text-layer {
+        font-size: 16px;
+    }
+    
+    .node-label {
+        font-size: 14px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .main-layer, .auxiliary-layer, .symbols-layer {
+        stroke: #000000;
+    }
+    
+    .text-layer {
+        fill: #000000;
+    }
+    
+    .auxiliary-layer {
+        opacity: 0.8;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .main-layer {
+        stroke-width: 3px;
+    }
+    
+    .text-layer {
+        font-weight: bold;
+    }
+}

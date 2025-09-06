@@ -1,0 +1,21 @@
+apply_constraint_solver: true
+confidence_tta: true
+deskew: true
+export:
+  write_geojson: true
+  write_svg: true
+input_dir: ./inputs
+jobs: 4
+line_merge_angle_deg: 3.0
+line_merge_gap_px: 6
+log_level: INFO
+min_line_len: 25
+output_dir: ./out
+svg:
+  dash_pattern: 6,6
+  scale: 1.0
+  stroke_aux: 1
+  stroke_main: 2
+use_paddle_ocr: true
+use_yolo_symbols: true
+yolo_symbols_weights: models/symbols_yolo.onnx

@@ -1,0 +1,7 @@
+imgsz: 960
+epochs: 60
+batch: 16
+optimizer: AdamW
+lr0: 0.001
+cos_lr: true
+mosaic: 0.5

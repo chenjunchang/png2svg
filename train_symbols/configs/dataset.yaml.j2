@@ -1,0 +1,7 @@
+path: "{{ root }}"
+train: images/train
+val: images/val
+test: images/test
+names:
+{% for n in names %}  - {{ n }}
+{% endfor %}

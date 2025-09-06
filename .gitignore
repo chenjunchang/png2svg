@@ -58,4 +58,6 @@ static/pab-ticket-extension.zip
 uv.lock
 eval/
 out/
+outputs/
 datasets/
+runs/
