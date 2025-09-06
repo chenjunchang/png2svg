@@ -109,7 +109,7 @@ def ensure_output_dir(output_dir: str) -> None:
 
 def read_image(path: str) -> np.ndarray:
     """
-    Read an image file with error handling.
+    Read an image file with error handling and Unicode path support.
     
     Args:
         path: Path to image file
@@ -120,10 +120,17 @@ def read_image(path: str) -> np.ndarray:
     Raises:
         ValueError: If image cannot be read
     """
-    img = cv2.imread(path)
-    if img is None:
-        raise ValueError(f"Cannot read image: {path}")
-    return img
+    try:
+        # Use np.fromfile + cv2.imdecode for Unicode path support
+        image_buffer = np.fromfile(path, dtype=np.uint8)
+        img = cv2.imdecode(image_buffer, cv2.IMREAD_COLOR)
+        
+        if img is None:
+            raise ValueError(f"Cannot decode image: {path}")
+        return img
+        
+    except Exception as e:
+        raise ValueError(f"Cannot read image: {path}. Error: {str(e)}")
 
 
 def get_output_paths(input_path: str, output_dir: str) -> Tuple[str, str]:
@@ -291,11 +298,8 @@ def validate_input_files(file_paths: List[str]) -> Tuple[List[str], List[str]]:
                 continue
             
             # Try to read image to validate it's a valid image file
-            img = cv2.imread(path)
-            if img is None:
-                invalid_files.append(f"{path}: Cannot read as image")
-                continue
-            
+            # Use the Unicode-compatible read_image function
+            read_image(path)
             valid_files.append(path)
             
         except Exception as e:

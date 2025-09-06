@@ -170,10 +170,8 @@ def validate_image(image_path: str) -> bool:
         if not Path(image_path).exists():
             return False
         
-        # Try to load image
-        img = cv2.imread(image_path)
-        if img is None:
-            return False
+        # Try to load image with Unicode path support
+        img = read_image(image_path)
         
         # Check minimum size
         h, w = img.shape[:2]
@@ -202,9 +200,7 @@ def estimate_processing_time(image_path: str, config: Config) -> float:
         float: Estimated processing time in seconds
     """
     try:
-        img = cv2.imread(image_path)
-        if img is None:
-            return 5.0  # Default estimate
+        img = read_image(image_path)
         
         h, w = img.shape[:2]
         pixels = w * h
