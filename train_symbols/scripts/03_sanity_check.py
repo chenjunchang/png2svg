@@ -161,8 +161,7 @@ def main():
         'show_labels': True,
         'show_conf': True,
         'show_boxes': True,
-        'line_width': 2,
-        'font_size': 12
+        'line_width': 2
     }
     
     # 处理每张图像
